@@ -83,6 +83,5 @@ class CategoryList extends StatelessWidget {
         )
       ],
     );
-    ;
   }
 }

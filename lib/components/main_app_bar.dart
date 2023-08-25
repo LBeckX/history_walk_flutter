@@ -50,7 +50,6 @@ class MainAppBar extends StatelessWidget implements PreferredSizeWidget {
         ),
       ],
     );
-    ;
   }
 
   @override

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:history_walk/components/main_app_bar.dart';
+import 'package:history_walk/components/setep_counter.dart';
 
 import '../components/category_list.dart';
 import '../components/route_list.dart';
@@ -15,8 +16,13 @@ class StartPage extends StatefulWidget {
 }
 
 class _StartPageState extends State<StartPage> {
-  List<RouteModel> routesFiltered = routes;
-  final List<CategoryModel> categoriesAll = categories;
+  List<RouteModel> routesFiltered = RouteModel.getRoutes();
+  final List<CategoryModel> categoriesAll = CategoryModel.getCategories();
+
+  @override
+  void initState() {
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -32,14 +38,15 @@ class _StartPageState extends State<StartPage> {
           CategoryList(
               categories: categoriesAll,
               categoryClicked: (category) => onCategoryFilter(category)),
-          RouteList(routes: routesFiltered)
+          RouteList(routes: routesFiltered),
+          const StepCounter()
         ],
       ),
     );
   }
 
   void onSearch(String query) {
-    final suggestionRoutes = routes.where((element) {
+    final suggestionRoutes = RouteModel.getRoutes().where((element) {
       final name = element.name.toLowerCase();
       final description = element.description.toLowerCase();
       final input = query.toLowerCase();
@@ -52,8 +59,8 @@ class _StartPageState extends State<StartPage> {
   }
 
   void onCategoryFilter(CategoryModel category) {
-    final suggestionRoutes = routes.where((element) {
-      if (routesFiltered.length != routes.length) {
+    final suggestionRoutes = RouteModel.getRoutes().where((element) {
+      if (routesFiltered.length != RouteModel.getRoutes().length) {
         return true;
       }
 

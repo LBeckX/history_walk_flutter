@@ -13,25 +13,25 @@ class CategoryModel {
       this.icon,
       this.boxColor = Colors.white,
       this.fontColor = Colors.black});
-}
 
-List<CategoryModel> categories = [
-  CategoryModel(
-      name: 'Movies',
-      category: 'movie',
-      icon: Icons.movie,
-      boxColor: Colors.white,
-      fontColor: Colors.black),
-  CategoryModel(
-      name: 'Books',
-      category: 'book',
-      icon: Icons.book,
-      boxColor: Colors.white,
-      fontColor: Colors.black),
-  CategoryModel(
-      name: 'Audio',
-      category: 'audio',
-      icon: Icons.audio_file,
-      boxColor: Colors.white,
-      fontColor: Colors.black),
-];
+  static List<CategoryModel> getCategories() => [
+    CategoryModel(
+        name: 'Movies',
+        category: 'movie',
+        icon: Icons.movie,
+        boxColor: Colors.white,
+        fontColor: Colors.black),
+    CategoryModel(
+        name: 'Books',
+        category: 'book',
+        icon: Icons.book,
+        boxColor: Colors.white,
+        fontColor: Colors.black),
+    CategoryModel(
+        name: 'Audio',
+        category: 'audio',
+        icon: Icons.audio_file,
+        boxColor: Colors.white,
+        fontColor: Colors.black),
+  ];
+}

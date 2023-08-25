@@ -58,6 +58,5 @@ class SearchField extends StatelessWidget {
                 borderSide: BorderSide.none)),
       ),
     );
-    ;
   }
 }
