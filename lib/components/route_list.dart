@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:history_walk/models/route_model.dart';
+import 'package:history_walk/pages/route_detail_page.dart';
 
 class RouteList extends StatelessWidget {
   List<RouteModel> routes;
@@ -15,7 +16,7 @@ class RouteList extends StatelessWidget {
         const Padding(
           padding: EdgeInsets.only(left: 20, right: 20),
           child: Text(
-            'Category',
+            'Routes',
             style: TextStyle(
                 color: Colors.black, fontSize: 22, fontWeight: FontWeight.w900),
           ),
@@ -80,15 +81,28 @@ class RouteList extends StatelessWidget {
                                     ? [Color(0xff9dceff), Color(0xff92a3fd)]
                                     : [Colors.transparent, Colors.transparent]),
                             borderRadius: BorderRadius.circular(100)),
-                        child: Center(
-                          child: Text(
-                            'Start',
-                            style: TextStyle(
-                                color: !routes[index].isSelected
-                                    ? Colors.white
-                                    : Color(0xff9dceff),
-                                fontWeight: FontWeight.w600,
-                                fontSize: 16),
+                        child: MouseRegion(
+                          cursor: SystemMouseCursors.click,
+                          child: GestureDetector(
+                            onTap: () {
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: (context) => RouteDetailPage(
+                                      routeModel: routes[index]),
+                                ),
+                              );
+                            },
+                            child: Center(
+                              child: Text(
+                                'Start',
+                                style: TextStyle(
+                                    color: !routes[index].isSelected
+                                        ? Colors.white
+                                        : const Color(0xff9dceff),
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 16),
+                              ),
+                            ),
                           ),
                         ),
                       )

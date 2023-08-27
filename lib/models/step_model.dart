@@ -14,15 +14,15 @@ class StepModel {
   CallbackFn? _onPedestrianStatusCallback;
   CallbackFn? _onPedestrianStatusErrorCallback;
 
-  StepModel() {
-    log('Init step sensor');
-  }
-
   void initStepCount({CallbackFn? onStep, CallbackFn? onStepError}) {
     log('Init step count');
     _onStepCallback = onStep;
     _onStepErrorCallback = onStepError;
-    Pedometer.stepCountStream.listen(_onStep).onError(_onStepCountError);
+    try {
+      Pedometer.stepCountStream.listen(_onStep).onError(_onStepCountError);
+    } catch (e) {
+      log('error $e');
+    }
   }
 
   void initPedestrianStatus(

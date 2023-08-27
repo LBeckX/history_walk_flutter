@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:history_walk/components/main_app_bar.dart';
-import 'package:history_walk/components/setep_counter.dart';
 
 import '../components/category_list.dart';
 import '../components/route_list.dart';
 import '../components/search_field.dart';
+import '../layout/main_layout.dart';
 import '../models/categorie_model.dart';
 import '../models/route_model.dart';
 
@@ -26,23 +25,17 @@ class _StartPageState extends State<StartPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: const MainAppBar(),
-      backgroundColor: Colors.white,
-      body: ListView(
-        children: [
-          SearchField(onSearch: (query) {
-            onSearch(query);
-          }),
-          const SizedBox(height: 40),
-          CategoryList(
-              categories: categoriesAll,
-              categoryClicked: (category) => onCategoryFilter(category)),
-          RouteList(routes: routesFiltered),
-          const StepCounter()
-        ],
-      ),
-    );
+    return mainLayout(children: [
+      SearchField(onSearch: (query) {
+        onSearch(query);
+      }),
+      const SizedBox(height: 40),
+      CategoryList(
+          categories: categoriesAll,
+          categoryClicked: (category) => onCategoryFilter(category)),
+      const SizedBox(height: 20),
+      RouteList(routes: routesFiltered)
+    ]);
   }
 
   void onSearch(String query) {

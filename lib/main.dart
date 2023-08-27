@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(),
       home: StartPage(),
+      debugShowMaterialGrid: false,
     );
   }
 }

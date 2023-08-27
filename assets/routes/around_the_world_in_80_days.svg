@@ -1,11 +1,7 @@
-<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#"
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"
-    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 783.086 400.649"
     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" id="Layer_1" xml:space="preserve"
     overflow="visible" viewBox="0 0 783.086 400.649" version="1.0"
-    enable-background="new 0 0 783.086 400.649" inkscape:version="0.91 r13725"
-    sodipodi:docname="World-Map-w-japan.svg"><defs
+    xmlns="http://www.w3.org/2000/svg" inkscape:version="0.91 r13725"><defs
      id="defs7830"><linearGradient
        gradientTransform="matrix(1.0388477,0,0,1.1573474,-763.26374,-561.14489)"
        gradientUnits="userSpaceOnUse"
@@ -13,28 +9,13 @@
        y2="810.94"
        x2="514.16998"
        y1="267.47"
-       x1="541.44"><stop
-         offset="0"
+       x1="541.44"><stop offset="0"
          style="stop-color:#9ab4ca;stop-opacity:1"
          id="stop3885" /><stop offset="0.5" style="stop-color:#91b1bc;stop-opacity:1"
     id="stop3891" /><stop offset="1" style="stop-color:#9ab4cb;stop-opacity:1" id="stop3887" /></linearGradient><linearGradient
     gradientTransform="matrix(1.0388477,0,0,1.1573474,-763.26374,-561.14489)"
     gradientUnits="userSpaceOnUse" xlink:href="#linearGradient3889" id="linearGradient9144"
     y2="810.94" x2="514.16998" y1="267.47" x1="541.44" /></defs>
-    <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1"
-        objecttolerance="10" gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0"
-        inkscape:pageshadow="2" inkscape:window-width="1916" inkscape:window-height="1035"
-        id="namedview7828" showgrid="false" inkscape:zoom="0.61731182" inkscape:cx="-260.97868"
-        inkscape:cy="239.59745" inkscape:window-x="4" inkscape:window-y="1"
-        inkscape:window-maximized="1" inkscape:current-layer="g8899" />
-    <metadata id="metadata7826"><rdf:RDF><cc:Work><dc:format>image/svg+xml</dc:format><dc:type
-        rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><cc:license
-        rdf:resource="http://creativecommons.org/licenses/publicdomain/" /><dc:publisher><cc:Agent
-             rdf:about="http://openclipart.org/"><dc:title>Openclipart</dc:title></cc:Agent></dc:publisher><dc:title></dc:title><dc:date>2008-09-03T09:53:45</dc:date><dc:description>world map ,small detail</dc:description><dc:source>https://openclipart.org/detail/19011/world-map-by-shokunin</dc:source><dc:creator><cc:Agent><dc:title>shokunin</dc:title></cc:Agent></dc:creator><dc:subject><rdf:Bag><rdf:li>continent</rdf:li><rdf:li>vector</rdf:li><rdf:li>world</rdf:li><rdf:li>world map</rdf:li></rdf:Bag></dc:subject></cc:Work><cc:License
-        rdf:about="http://creativecommons.org/licenses/publicdomain/"><cc:permits
-           rdf:resource="http://creativecommons.org/ns#Reproduction" />
-        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution" />
-        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks" /></cc:License></rdf:RDF></metadata>
     <g id="layer1" transform="translate(-937.52206,293.97103)"><g
        id="g9087"><g
          id="g8978"
@@ -69,22 +50,19 @@
         d="m123.22 27.275c2.026-2.026 7.428-6.752 9.454-5.402 2.025 1.35 5.063-1.013 7.427 1.013 2.363 2.026 5.064 4.389 7.09 5.064s4.389-1.688 6.415-0.675c2.025 1.013 9.115-5.064 7.765-0.337-1.351 4.727 1.688 6.077-2.026 6.415s-7.765 3.039-9.454 2.026c-1.688-1.013-3.039-2.026-5.74-0.675-2.701 1.35-1.35 1.35-4.389 0.675-3.038-0.675-3.713 0.675-4.388-0.338-0.676-1.012-2.701-0.675-2.364-3.714 0.337-3.038 1.35-2.701-0.676-2.701-2.025 0-3.713 0.338-5.064-0.675-1.34-1.013-4.04-0.676-4.04-0.676z"
         id="path7824" /></g><g id="g8879"
         transform="matrix(0.95479435,-0.14802811,0.1393488,1.0257417,-136.93077,85.296617)"><path
-                 inkscape:connector-curvature="0"
+                 
                  id="path3502"
                  d="m 668.91753,787.69644 c 2.94551,3.20858 10.60824,6.86327 4.82597,0.27783 -1.20198,-1.10223 -4.08447,-2.86527 -4.82593,-0.2779"
                  style="fill:#b2b2b2;fill-opacity:1" />
-        <path inkscape:connector-curvature="0" id="path3510"
+        <path id="path3510"
             d="m 669.92127,786.06483 c 5.26468,-3.27727 11.04715,1.57247 15.22762,-3.09107 3.18042,-3.54572 -7.18413,-9.21386 -9.60681,-13.2029 -3.92663,-3.19009 -9.2966,-3.6127 -3.06013,0.59402 3.88827,4.57373 5.62977,13.65149 -2.9967,12.06207 -0.93603,1.06378 -0.0313,2.60747 0.43579,3.6373"
             style="fill:#b2b2b2;fill-opacity:1" />
-        <path inkscape:connector-curvature="0" id="path3532"
-            d="m 674.31155,786.88063 c 6.17772,6.17591 2.54823,-7.09996 0,0 z"
+        <path d="m 674.31155,786.88063 c 6.17772,6.17591 2.54823,-7.09996 0,0 z" id="path3532"
             style="fill:#b2b2b2;fill-opacity:1" />
-        <path inkscape:connector-curvature="0" id="path3542"
-            d="m 676.1568,784.45589 c -0.97274,-0.67751 0.22728,0.73806 0,0 z"
+        <path d="m 676.1568,784.45589 c -0.97274,-0.67751 0.22728,0.73806 0,0 z" id="path3542"
             style="fill:#b2b2b2;fill-opacity:1" />
-        <path sodipodi:nodetypes="csc" inkscape:connector-curvature="0" id="path3546"
+        <path id="path3546"
             d="m 664.16608,763.54191 c 5.13326,0.196 7.4107,-2.21148 5.44268,-4.33692 -1.96802,-2.12545 -8.1815,-3.96885 -10.1332,-3.75647"
             style="fill:#b2b2b2;fill-opacity:1" />
-        <path inkscape:connector-curvature="0" id="path3548"
-            d="m 677.5142,784.38791 c -0.79932,1.25695 1.74501,0.2206 0,0 z"
+        <path d="m 677.5142,784.38791 c -0.79932,1.25695 1.74501,0.2206 0,0 z" id="path3548"
             style="fill:#b2b2b2;fill-opacity:1" /></g></g></g></g></g></g></svg>

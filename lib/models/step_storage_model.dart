@@ -42,7 +42,6 @@ class StepStorageModel {
     });
 
     counterDate = _prefs.then((SharedPreferences prefs) async {
-      log(prefs.getString('counter_date')!);
       Iterable i = jsonDecode(prefs.getString('counter_date') ?? '[]');
 
       final DateStepList dateStepList =
