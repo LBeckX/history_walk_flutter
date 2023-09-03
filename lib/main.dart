@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:history_walk/pages/start.dart';
+import 'package:history_walk/pages/start_page.dart';
 
 void main() {
   runApp(const MyApp());

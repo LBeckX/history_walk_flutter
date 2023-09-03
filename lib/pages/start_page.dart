@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../components/category_list.dart';
 import '../components/route_list.dart';
 import '../components/search_field.dart';
 import '../layout/main_layout.dart';
@@ -29,11 +28,9 @@ class _StartPageState extends State<StartPage> {
       SearchField(onSearch: (query) {
         onSearch(query);
       }),
-      const SizedBox(height: 40),
-      CategoryList(
-          categories: categoriesAll,
-          categoryClicked: (category) => onCategoryFilter(category)),
-      const SizedBox(height: 20),
+      const SizedBox(height: 25),
+      /*CategoryList(categories: categoriesAll, categoryClicked: (category) => onCategoryFilter(category)),*/
+      const SizedBox(height: 10),
       RouteList(routes: routesFiltered)
     ]);
   }

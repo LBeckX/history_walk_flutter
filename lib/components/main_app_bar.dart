@@ -1,6 +1,8 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
+import 'package:history_walk/components/hw_icon_button.dart';
+import 'package:history_walk/pages/profile_page.dart';
+
+import '../utils/page_routes.dart';
 
 class MainAppBar extends StatelessWidget implements PreferredSizeWidget {
   const MainAppBar({super.key});
@@ -14,39 +16,24 @@ class MainAppBar extends StatelessWidget implements PreferredSizeWidget {
       backgroundColor: Colors.white,
       centerTitle: true,
       elevation: 0.0,
-      leading: GestureDetector(
-        onTap: () {
-          log('tab');
-        },
-        child: Container(
-          margin: const EdgeInsets.all(10),
-          decoration: BoxDecoration(
-              color: const Color(0xfff8f8f8),
-              borderRadius: BorderRadius.circular(10)),
-          alignment: Alignment.center,
-          child: const Icon(
-            Icons.arrow_back_ios_sharp,
-            size: 15,
-            color: Colors.black,
-          ),
-        ),
+      leading: Container(
+        child: (Navigator.canPop(context))
+            ? GestureDetector(
+                onTap: () {
+                  Navigator.pop(context);
+                },
+                child: const HwIconButton(icon: Icons.arrow_back_ios_sharp))
+            : Container(),
       ),
       actions: [
-        GestureDetector(
-          onTap: () {},
-          child: Container(
-            width: 37,
-            margin: const EdgeInsets.all(10),
-            decoration: BoxDecoration(
-                color: const Color(0xfff8f8f8),
-                borderRadius: BorderRadius.circular(10)),
-            alignment: Alignment.center,
-            child: const Icon(
-              Icons.more_horiz,
-              size: 15,
-              color: Colors.black,
-            ),
-          ),
+        Container(
+          child: !ProfilePage.isActive
+              ? GestureDetector(
+                  onTap: () {
+                    Navigator.of(context).push(profilePage());
+                  },
+                  child: const HwIconButton(icon: Icons.person))
+              : Container(),
         ),
       ],
     );
