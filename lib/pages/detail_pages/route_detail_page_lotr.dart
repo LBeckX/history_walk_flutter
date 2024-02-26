@@ -1,18 +1,17 @@
 import 'package:flutter/material.dart';
 
-import '../layout/main_layout.dart';
-import '../models/route_model.dart';
+import '../../layout/main_layout.dart';
+import '../route_detail_page.dart';
 
-class RouteDetailPage extends StatefulWidget {
-  final RouteModel routeModel;
-
-  const RouteDetailPage({super.key, required this.routeModel});
+class RouteDetailPageLotr extends RouteDetailPage {
+  RouteDetailPageLotr({super.key, required super.routeModel});
 
   @override
-  State<RouteDetailPage> createState() => RouteDetailPageState();
+  State<RouteDetailPageLotr> createState() => _RouteDetailPageLotrState();
 }
 
-class RouteDetailPageState<T extends RouteDetailPage> extends State<T> {
+class _RouteDetailPageLotrState
+    extends RouteDetailPageState<RouteDetailPageLotr> {
   @override
   Widget build(BuildContext context) {
     return mainLayout(children: [

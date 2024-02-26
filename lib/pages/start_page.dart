@@ -30,6 +30,14 @@ class _StartPageState extends State<StartPage> {
       }),
       const SizedBox(height: 25),
       /*CategoryList(categories: categoriesAll, categoryClicked: (category) => onCategoryFilter(category)),*/
+      const Padding(
+        padding: EdgeInsets.only(left: 20, right: 20),
+        child: Text(
+          'Routes',
+          style: TextStyle(
+              color: Colors.black, fontSize: 22, fontWeight: FontWeight.w900),
+        ),
+      ),
       const SizedBox(height: 10),
       RouteList(routes: routesFiltered)
     ]);
