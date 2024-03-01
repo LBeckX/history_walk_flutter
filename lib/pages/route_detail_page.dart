@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:history_walk/components/map_path.dart';
 
 import '../layout/main_layout.dart';
 import '../models/route_model.dart';
@@ -13,6 +14,8 @@ class RouteDetailPage extends StatefulWidget {
 }
 
 class RouteDetailPageState<T extends RouteDetailPage> extends State<T> {
+  Size size = Size(550, (500 * 0.75).toDouble());
+
   @override
   Widget build(BuildContext context) {
     return mainLayout(children: [
@@ -26,7 +29,10 @@ class RouteDetailPageState<T extends RouteDetailPage> extends State<T> {
         padding: EdgeInsets.only(top: 20, left: 20, right: 20),
         child: Text(widget.routeModel.description,
             style: TextStyle(fontSize: 20, fontWeight: FontWeight.w400)),
-      )
+      ),
+      Container(
+        child: MapPathWidget(size: size),
+      ),
     ]);
   }
 }

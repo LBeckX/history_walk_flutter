@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../pages/detail_pages/route_detail_page_lotr.dart';
 import '../pages/route_detail_page.dart';
 
 class RouteModel {
@@ -13,6 +12,7 @@ class RouteModel {
   Color color;
   Color bgColor;
   RouteDetailPage Function(RouteModel) detailPage;
+  Map<String, int> distance;
   bool isSelected;
 
   RouteModel({
@@ -25,6 +25,7 @@ class RouteModel {
     required this.color,
     required this.bgColor,
     required this.detailPage,
+    required this.distance,
     this.isSelected = false,
   });
 
@@ -35,12 +36,12 @@ class RouteModel {
                 'Go the distance from the Shire to Mordor and throw the ring into the flames - 1.800 miles or 2.700 km',
             categories: 'movie, book, audio',
             icon: 'assets/routes/lotr/icon.svg',
-            map: 'assets/routes/lotr/lotr_middleearth_map.svg',
-            path: 'assets/routes/lotr/lotr_middleearth_map.svg',
+            map: 'assets/routes/lotr/map.svg',
+            path: 'assets/routes/lotr/path.svg',
+            distance: {'miles': 1800, 'km': 2700},
             color: Colors.white,
             bgColor: Colors.black,
-            detailPage: (routeModel) =>
-                RouteDetailPageLotr(routeModel: routeModel),
+            detailPage: (routeModel) => RouteDetailPage(routeModel: routeModel),
             isSelected: false),
         /*RouteModel(
             name: 'Forest gump',
